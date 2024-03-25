@@ -4,22 +4,25 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./main.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import url('../partials_common/highlighted_text/highlighted_text.css');
+@import url('../partials_common/highlighted_text/highlighted_text.css');
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+@import url('../partials/header/header.css');
+@import url('../partials/hero/hero.css');
+@import url('../partials/about_us/about_us.css');
+@import url('../partials/our_lessons/our_lessons.css');
+@import url('../partials/application_form/application_form.css');
+@import url('../partials/our_students/our_students.css');
+@import url('../partials/footer/footer.css');
+@import url('../partials/mobile_menu/mobile_menu.css');
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+
+
+
+
+
+
