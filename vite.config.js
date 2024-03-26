@@ -8,6 +8,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    base: './',
     root: 'src',
     build: {
       sourcemap: true,
@@ -23,7 +24,7 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: './dist',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
