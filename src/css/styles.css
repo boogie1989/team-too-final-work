@@ -5,7 +5,6 @@
   |============================
 */
 
-@import url('./reset.css');
 @import url('./main.css');
 
 @import url('../partials_common/highlighted_text/highlighted_text.css');

@@ -1,21 +1,41 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --primary-font: 'Monrope', sans-serif;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  --BODY-COLOR: yellow;
+  --bg-color: #ffffff;
+  --primary-text-color: #121417;
+  --primary-color: #4dc274;
+  --primary-light-color: #d4fde1;
+  --primary-gradient: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+  --primary-container-color: #f3f5f6;
 }
 
+body {
+  font-family: var(--primary-font);
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
 
-section {
-  padding: 50px;
+.section {
+}
+
+.container {
+  max-width: 375px;
+  margin: 80px auto;
+  padding: 0px 20px;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 100px auto;
+    padding: 0px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 150px auto;
+    padding: 0px 128px;
+  }
 }
