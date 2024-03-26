@@ -7,17 +7,18 @@
 
 @import url('./main.css');
 
-@import url('../partials_common/highlighted_text/highlighted_text.css');
-@import url('../partials_common/highlighted_text/highlighted_text.css');
-
-@import url('../partials/header/header.css');
-@import url('../partials/hero/hero.css');
-@import url('../partials/about_us/about_us.css');
-@import url('../partials/our_lessons/our_lessons.css');
-@import url('../partials/application_form/application_form.css');
-@import url('../partials/our_students/our_students.css');
-@import url('../partials/footer/footer.css');
-@import url('../partials/mobile_menu/mobile_menu.css');
+@import url('./about_us.css');
+@import url('./application_form.css');
+@import url('./button.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./highlighted_text.css');
+@import url('./mobile_menu.css');
+@import url('./our_lessons.css');
+@import url('./our_packages.css');
+@import url('./our_students.css');
+@import url('./our_teachers.css');
 
 
 
