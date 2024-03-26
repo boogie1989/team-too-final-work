@@ -1,0 +1,17 @@
+.text-highlight {
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.text-highlight::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: 0px;
+  height: 0.5em;
+  border-radius: 0.2em;
+  background: var(--primary-light-color);
+}
