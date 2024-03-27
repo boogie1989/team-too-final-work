@@ -1,17 +1,25 @@
-.application-paragraph {
-    font-size: 14px;
-    line-height: 1.71429;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.8);
+.application h2 {
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+}
+
+.paragraph {
+    padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-    .application-paragraph {
-        font-size: 18px;
-        line-height: 1.66667;
-        color: rgba(18, 20, 23, 0.5);
+    .paragraph {
+        margin-bottom: 64px;
     }
-    
+}
+
+.group-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
 }
 
 .application-form-input {
@@ -20,7 +28,13 @@
     width: 335px;
     height: 50px;
     padding-left: 18px;
-    margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+    .application-form-input {
+        width: 500px;
+        height: 56px;
+    }
 }
 
 .application-form-input::placeholder {
@@ -32,6 +46,55 @@
 .comment {
     resize: none;
     min-height: 94px;
-    margin-bottom: 16px;
     padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .group-inputs {
+        margin-bottom: 32px;
+
+    }
+}
+
+.group-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.radio-title {
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+    .radio-title {
+        margin-bottom: 16px;
+    }
+}
+
+.form-button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 150px;
+    width: 335px;
+    height: 52px;
+    background-color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.privacy {
+    font-size: 12px;
+    line-height: 1.33333;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.privacy a {
+    text-decoration: underline;
+    color: rgba(18, 20, 23, 0.5);
 }
