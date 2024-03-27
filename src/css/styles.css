@@ -8,6 +8,7 @@
 
 @import url('./main.css');
 @import url('./header.css');
+@import url('./mobile_menu.css');
 
 /* @import url('./about_us.css');
 @import url('./application_form.css');
@@ -18,7 +19,7 @@
 @import url('./button.css');
 @import url('./highlighted_text.css');
 @import url('./our_lessons.css');
-/* @import url('./mobile_menu.css');
+/*
 @import url('./our_lessons.css');
 @import url('./our_packages.css');
 @import url('./our_students.css');

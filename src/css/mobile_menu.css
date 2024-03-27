@@ -1,0 +1,40 @@
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(18, 20, 23, 0.4);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-backdrop.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: auto;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.menu-container .btn-close {
+  padding: 8px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.menu-container .btn-close .icon {
+  stroke: #fff;
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 428px) {
+}
