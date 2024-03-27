@@ -32,7 +32,6 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.64px;
-  margin: 0;
   padding-bottom: 16px;
 }
 
@@ -45,6 +44,7 @@ body {
   line-height: 1.7;
   margin: 0px auto;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,6 +63,7 @@ body {
     line-height: 1.65;
     padding: 0px, 157px;
     width: 95%;
+    padding-bottom: 64px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -79,5 +80,6 @@ body {
     font-size: 18px;
     line-height: 1.65;
     width: 65%;
+    padding-bottom: 64px;
   }
 }
