@@ -1,6 +1,8 @@
-<li>
-  {=$title}
-  {=$price}
-  {=$description}
+<li class="lesson-card {=$class}">
+  <div>
+    <h3 class="lesson-card-title">{=$title}</h3>
+    <h3 class="lesson-card-price">{=$price}</h3>
+    <p class="lesson-card-desc">{=$description}</p>
+  </div>
   <load ="partials/button.html" title="Leave an application" />
 </li>
