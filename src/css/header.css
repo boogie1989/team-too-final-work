@@ -32,6 +32,10 @@
   fill: var(--primary-color);
 }
 
+section {
+  scroll-behavior: smooth;
+}
+
 /* header */
 .header {
   position: sticky;
