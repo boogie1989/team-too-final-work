@@ -118,13 +118,14 @@ section {
   .header {
     height: 84px;
   }
+
   .header .container {
-    max-width: 1064px;
+    max-width: 1088px;
     margin: 0 auto;
   }
+
   .header-nav {
     display: flex;
-    /* gap: 138px; */
   }
 
   .header .nav-link-group {
