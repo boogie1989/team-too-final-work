@@ -1,3 +1,37 @@
+/* social-icons */
+.social-icons-set {
+  display: flex;
+  column-gap: 12px;
+}
+
+.social-icons-set .social-icons-item {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-set .icon-link {
+  border-radius: 10px;
+  display: inline-flex;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  padding: 7px;
+  transition: border-color var(--transition-base);
+}
+
+.social-icons-set .icon {
+  width: 28px;
+  height: 28px;
+  transition: fill var(--transition-base);
+}
+
+.social-icons-set .icon-link:hover {
+  border: 1px solid rgba(77, 194, 116, 0.1);
+  opacity: 0.8;
+}
+
+.social-icons-set .icon-link:hover .icon {
+  fill: var(--primary-color);
+}
+
 /* header */
 .header {
   position: sticky;
