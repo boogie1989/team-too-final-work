@@ -1,6 +1,15 @@
-
-
-.lessons-desc {
-    text-align: center;
-
+.lesson-cards {
+  display: flex;
+  gap: 32px;
 }
+
+.lesson-card {
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+}
+
+.lesson-card-selected {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+}
+
