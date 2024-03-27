@@ -1,0 +1,28 @@
+.button {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 87px;
+
+  color: var(--bg-color);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--primary-color-dark);
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 18px;
+    padding: 16px 64px;
+    line-height: 1.55;
+  }
+}

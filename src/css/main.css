@@ -1,9 +1,10 @@
 :root {
-  --primary-font: 'Monrope', sans-serif;
+  --primary-font: 'Manrope', sans-serif;
 
   --bg-color: #ffffff;
   --primary-text-color: #121417;
   --primary-color: #4dc274;
+  --primary-color-dark: #38ae5f;
   --primary-light-color: #d4fde1;
   --primary-gradient: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
   --primary-container-color: #f3f5f6;
