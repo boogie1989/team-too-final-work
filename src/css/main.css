@@ -25,21 +25,61 @@ body {
   border: 1px solid black;
 }
 
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  padding-bottom: 16px;
+}
+
+.section-desc {
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0px auto;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     margin: 100px auto;
     padding: 0px 32px;
   }
+
+  .section-title {
+    letter-spacing: -0.8px;
+  }
+
+  .section-desc {
+    font-size: 18px;
+    line-height: 1.65;
+    padding: 0px, 157px;
+    width: 95%;
+    padding-bottom: 64px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
     margin: 150px auto;
-    padding: 0px 128px;
   }
-}
 
-.section-title {
-  font-size: 40px;
+  .section-title {
+    letter-spacing: -0.8px;
+  }
+
+  .section-desc {
+    font-size: 18px;
+    line-height: 1.65;
+    width: 65%;
+    padding-bottom: 64px;
+  }
 }
