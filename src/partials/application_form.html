@@ -1,11 +1,64 @@
-<section class="section">
+<section class="section" id="application-form">
   <div class="container">
     <h2 class="section-title">
       Leave an
-      <load
-        ="partials/highlighted_text.html"
-        text="application"
-      />
+      <load ="partials/highlighted_text.html" text="application" />
     </h2>
+    <p class="application-paragraph">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <form class="application-form">
+      <input
+        class="application-form-input"
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="application-form-input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <input
+        class="application-form-input"
+        type="tel"
+        name="phone-number"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        class="application-form-input comment"
+        name="comment"
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      ></textarea>
+      <p>Choose a teacher</p>
+      <label>
+        <input type="radio" name="teacher" value="maria" checked />
+        Maria
+      </label>
+      <label>
+        <input type="radio" name="teacher" value="artem" />
+        Artem
+      </label>
+      <label>
+        <input type="radio" name="teacher" value="ilona" />
+        Ilona
+      </label>
+      <label>
+        <input type="radio" name="teacher" value="volodymyr" />
+        Volodymyr
+      </label>
+      <button class="form-button" type="submit">Send</button>
+      <p>
+        By clicking on “Send” button, you agree to our Privacy Policy, and allow
+        Promodo to use this information for marketing purposes.
+      </p>
+    </form>
   </div>
 </section>
