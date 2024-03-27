@@ -2,7 +2,13 @@
   --primary-font: 'Manrope', sans-serif;
 
   --bg-color: #ffffff;
+
+  --bg-color-400: rgba(255, 255, 255, 0.4);
+  --bg-color-700: rgba(255, 255, 255, 0.7);
+
   --primary-text-color: #121417;
+  --primary-text-color-500: rgba(18, 20, 23, 0.5);
+
   --primary-color: #4dc274;
   --primary-color-dark: #38ae5f;
   --primary-light-color: #d4fde1;
@@ -25,6 +31,7 @@ body {
   margin: 80px auto;
   padding: 0px 20px;
 }
+
 
 .section-title {
   font-size: 40px;
