@@ -196,12 +196,13 @@
 
     .packages-card-wrapper:before {
       background: rgba(255, 255, 255, 0.5);
-      transform: rotate(-11deg);
+      transform: rotate(8deg);
     }
 
     .packages-card-wrapper:after {
       background: var(--primary-light-color);
-      transform: rotate(8deg);
+      z-index: 1;
+      transform: rotate(-11deg);
     }
   }
 }
