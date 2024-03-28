@@ -39,6 +39,7 @@
   background-color: transparent;
   border: none;
   outline: none;
+  display: inline-flex;
 }
 
 .menu-container .btn-close .icon {
@@ -89,6 +90,7 @@
 @media (min-width: 768px) {
   .menu-container {
     max-width: 384px;
+    padding-bottom: 32px;
   }
 
   .menu-container .btn-close {
@@ -102,9 +104,5 @@
 
   .menu-container .nav-link-group {
     margin-top: 277px;
-  }
-
-  .menu-container .menu-container-body {
-    padding-bottom: 32px;
   }
 }
