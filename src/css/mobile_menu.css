@@ -106,3 +106,9 @@
     margin-top: 277px;
   }
 }
+
+@media only screen and (orientation: landscape) and (max-width: 1280px) {
+  .menu-container .nav-link-group {
+    margin-top: auto;
+  }
+}
