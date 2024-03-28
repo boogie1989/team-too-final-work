@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,18 +13,89 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     
     <script type="module" crossorigin src="./commonHelpers.js"></script>
-    <link rel="stylesheet" href="./assets/index-ced14402.css">
+    <link rel="stylesheet" href="./assets/index-876ceb91.css">
   </head>
   <body>
-    <header>
+    <header class="header">
   <div class="container">
-    <h1>Header</h1>
-    <button class="button">
-    Leave an application
-</button>
+    <nav class="header-nav">
+      <a class="logo" href="./index.html">
+        english<span class="logo-suffix">excellence</span>.
+      </a>
+      <ul class="nav-link-group">
+  <li class="nav-link-item">
+    <a class="nav-link" href="#about-us"> About us </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#"> Our lessons </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#teachers"> Teachers </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#"> Reviews </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#application-form"> Contact us </a>
+  </li>
+</ul>
+
+      <button
+        role="button"
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon">
+          <use href="./assets/icons-0fe3b4a4.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <ul class="social-icons-set">
+  <li class="social-icons-item">
+    <a
+      href="https://www.facebook.com/goITclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-icons-item">
+    <a
+      href="https://www.instagram.com/goitclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-icons-item">
+    <a
+      href="https://www.youtube.com/c/GoIT"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+    </nav>
   </div>
 </header>
 
@@ -249,8 +319,81 @@
   </div>
 </footer>
 
-    <div></div>
+    <div class="menu-backdrop js-menu-container" id="mobile-menu">
+  <div class="menu-container">
+    <button class="btn-close menu-toggle js-close-menu" role="button">
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="menu-container-body">
+      <ul class="nav-link-group">
+  <li class="nav-link-item">
+    <a class="nav-link" href="#about-us"> About us </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#"> Our lessons </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#teachers"> Teachers </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#"> Reviews </a>
+  </li>
+  <li class="nav-link-item">
+    <a class="nav-link" href="#application-form"> Contact us </a>
+  </li>
+</ul>
 
+      <ul class="social-icons-set">
+  <li class="social-icons-item">
+    <a
+      href="https://www.facebook.com/goITclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-icons-item">
+    <a
+      href="https://www.instagram.com/goitclub/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-icons-item">
+    <a
+      href="https://www.youtube.com/c/GoIT"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+    >
+      <svg class="icon">
+        <use href="./assets/icons-0fe3b4a4.svg#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
