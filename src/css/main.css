@@ -14,6 +14,7 @@
   --primary-light-color: #d4fde1;
   --primary-gradient: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
   --primary-container-color: #f3f5f6;
+  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {

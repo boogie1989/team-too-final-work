@@ -10,7 +10,7 @@
     </p>
     <div class="application-form-content">
       <div class="application-img-content">
-        <div class="test">
+        <div>
           <p class="lessons-counter">1000</p>
           <p class="lesson-paragraph">
             of our online English language lessons! This journey has been full
@@ -21,40 +21,50 @@
       </div>
       <form>
         <fieldset class="group-inputs">
-          <input
-            class="application-form-input"
-            type="text"
-            name="username"
-            placeholder="Name"
-            pattern="[A-Za-z]{2,}[\s]?[A-Za-z]*"
-            title="The name must be no shorter than 2 letters and begin with a capital letter"
-            required
-          />
-          <input
-            class="application-form-input"
-            type="email"
-            name="email"
-            placeholder="Email"
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
-            title="Enter valid email address"
-            required
-          />
-          <input
-            class="application-form-input"
-            type="tel"
-            name="phone-number"
-            placeholder="Phone"
-            pattern="[0-9]{10}"
-            title="The phone number must consist of 10 digits"
-            required
-          />
-          <textarea
-            class="application-form-input comment"
-            name="comment"
-            cols="30"
-            rows="10"
-            placeholder="Comment"
-          ></textarea>
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="text"
+              name="username"
+              placeholder=""
+              pattern="[A-Za-z]{2,}[\s]?[A-Za-z]*"
+              title="The name must be no shorter than 2 letters"
+              required
+            />
+            <span class="placeholder">Name</span>
+          </div>
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="email"
+              name="email"
+              placeholder=""
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
+              title="Enter valid email address"
+              required
+            />
+            <span class="placeholder">Email</span>
+          </div>
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="tel"
+              name="phone-number"
+              placeholder=""
+              pattern="[0-9]{10}"
+              title="The phone number must consist of 10 digits"
+              required
+            />
+            <span class="placeholder">Phone</span>
+          </div>
+          <div class="validation-border">
+            <textarea
+              class="application-form-input comment"
+              name="comment"
+              placeholder=""
+            ></textarea>
+            <span class="placeholder">Comment</span>
+          </div>
         </fieldset>
         <fieldset class="group-radio">
           <legend class="radio-title">Choose a teacher</legend>
