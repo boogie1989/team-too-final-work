@@ -19,7 +19,7 @@
     />
     
     <script type="module" crossorigin src="./commonHelpers.js"></script>
-    <link rel="stylesheet" href="./assets/index-41518712.css">
+    <link rel="stylesheet" href="./assets/index-9ba1e8e9.css">
   </head>
   <body>
     <header class="header">
@@ -305,19 +305,109 @@
   </div>
 </section>
 
-      <section class="section">
-  <div class="container">
+      <section class="section" id="application-form">
+  <div class="container application">
     <h2 class="section-title">
       Leave an
       <span class="text-highlight">
     application
 </span>
     </h2>
-
-    <p class="section-desc">
+    <p class="section-desc paragraph">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
+    <div class="application-form-content">
+      <div class="application-img-content">
+        <div>
+          <p class="lessons-counter">1000</p>
+          <p class="lesson-paragraph">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form>
+        <fieldset class="group-inputs">
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="text"
+              name="username"
+              placeholder=""
+              pattern="[A-Za-z]{2,}[\s]?[A-Za-z]*"
+              title="The name must be no shorter than 2 letters"
+              required
+            />
+            <span class="placeholder">Name</span>
+          </div>
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="email"
+              name="email"
+              placeholder=""
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
+              title="Enter valid email address"
+              required
+            />
+            <span class="placeholder">Email</span>
+          </div>
+          <div class="validation-border">
+            <input
+              class="application-form-input"
+              type="tel"
+              name="phone-number"
+              placeholder=""
+              pattern="[0-9]{10}"
+              title="The phone number must consist of 10 digits"
+              required
+            />
+            <span class="placeholder">Phone</span>
+          </div>
+          <div class="validation-border">
+            <textarea
+              class="application-form-input comment"
+              name="comment"
+              placeholder=""
+            ></textarea>
+            <span class="placeholder">Comment</span>
+          </div>
+        </fieldset>
+        <fieldset class="group-radio">
+          <legend class="radio-title">Choose a teacher</legend>
+          <div class="radio">
+            <input
+              id="radio-1"
+              type="radio"
+              name="teacher"
+              value="maria"
+              checked
+            />
+            <label class="radio-label" for="radio-1">Maria</label>
+          </div>
+          <div class="radio">
+            <input id="radio-2" type="radio" name="teacher" value="artem" />
+            <label class="radio-label" for="radio-2">Artem</label>
+          </div>
+          <div class="radio">
+            <input id="radio-3" type="radio" name="teacher" value="ilona" />
+            <label class="radio-label" for="radio-3">Ilona</label>
+          </div>
+          <div class="radio">
+            <input id="radio-4" type="radio" name="teacher" value="volodymyr" />
+            <label class="radio-label" for="radio-4">Volodymyr</label>
+          </div>
+        </fieldset>
+        <button class="form-button" type="submit">Send</button>
+        <p class="privacy">
+          By clicking on “Send” button, you agree to our
+          <a href="" target="_blank">Privacy Policy</a>, and allow Promodo to
+          use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
 
