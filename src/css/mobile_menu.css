@@ -34,18 +34,18 @@
 }
 
 .menu-container .btn-close {
-  padding: 8px;
   margin-left: auto;
   background-color: transparent;
   border: none;
   outline: none;
   display: inline-flex;
+  padding: 0;
 }
 
 .menu-container .btn-close .icon {
   stroke: #fff;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
 }
 
 .menu-container-body {
@@ -93,13 +93,9 @@
     padding-bottom: 32px;
   }
 
-  .menu-container .btn-close {
-    padding: 10px;
-  }
-
   .menu-container .btn-close .icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .menu-container .nav-link-group {
