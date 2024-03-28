@@ -8,62 +8,86 @@
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
-    <form>
-      <fieldset class="group-inputs">
-        <input
-          class="application-form-input"
-          type="text"
-          name="username"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="application-form-input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-        <input
-          class="application-form-input"
-          type="tel"
-          name="phone-number"
-          placeholder="Phone"
-          required
-        />
-        <textarea
-          class="application-form-input comment"
-          name="comment"
-          cols="30"
-          rows="10"
-          placeholder="Comment"
-        ></textarea>
-      </fieldset>
-      <fieldset class="group-radio">
-        <legend class="radio-title">Choose a teacher</legend>
-        <label>
-          <input type="radio" name="teacher" value="maria" checked />
-          Maria
-        </label>
-        <label>
-          <input type="radio" name="teacher" value="artem" />
-          Artem
-        </label>
-        <label>
-          <input type="radio" name="teacher" value="ilona" />
-          Ilona
-        </label>
-        <label>
-          <input type="radio" name="teacher" value="volodymyr" />
-          Volodymyr
-        </label>
-      </fieldset>
-      <button class="form-button" type="submit">Send</button>
-      <p class="privacy">
-        By clicking on “Send” button, you agree to our
-        <a href="" target="_blank">Privacy Policy</a>, and allow Promodo to use
-        this information for marketing purposes.
-      </p>
-    </form>
+    <div class="application-form-content">
+      <div class="application-img-content">
+        <div class="test">
+          <p class="lessons-counter">1000</p>
+          <p class="lesson-paragraph">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form>
+        <fieldset class="group-inputs">
+          <input
+            class="application-form-input"
+            type="text"
+            name="username"
+            placeholder="Name"
+            pattern="[A-Za-z]{2,}[\s]?[A-Za-z]*"
+            title="The name must be no shorter than 2 letters and begin with a capital letter"
+            required
+          />
+          <input
+            class="application-form-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
+            title="Enter valid email address"
+            required
+          />
+          <input
+            class="application-form-input"
+            type="tel"
+            name="phone-number"
+            placeholder="Phone"
+            pattern="[0-9]{10}"
+            title="The phone number must consist of 10 digits"
+            required
+          />
+          <textarea
+            class="application-form-input comment"
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
+        </fieldset>
+        <fieldset class="group-radio">
+          <legend class="radio-title">Choose a teacher</legend>
+          <div class="radio">
+            <input
+              id="radio-1"
+              type="radio"
+              name="teacher"
+              value="maria"
+              checked
+            />
+            <label class="radio-label" for="radio-1">Maria</label>
+          </div>
+          <div class="radio">
+            <input id="radio-2" type="radio" name="teacher" value="artem" />
+            <label class="radio-label" for="radio-2">Artem</label>
+          </div>
+          <div class="radio">
+            <input id="radio-3" type="radio" name="teacher" value="ilona" />
+            <label class="radio-label" for="radio-3">Ilona</label>
+          </div>
+          <div class="radio">
+            <input id="radio-4" type="radio" name="teacher" value="volodymyr" />
+            <label class="radio-label" for="radio-4">Volodymyr</label>
+          </div>
+        </fieldset>
+        <button class="form-button" type="submit">Send</button>
+        <p class="privacy">
+          By clicking on “Send” button, you agree to our
+          <a href="" target="_blank">Privacy Policy</a>, and allow Promodo to
+          use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
