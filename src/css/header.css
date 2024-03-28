@@ -1,0 +1,148 @@
+section {
+  scroll-behavior: smooth;
+}
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 67px;
+  background-color: var(--bg-color);
+  z-index: 2;
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.header .logo > .logo-suffix {
+  color: var(--primary-color);
+}
+
+.header .nav-link-group {
+  display: none;
+}
+
+.header .nav-link-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-link-item:hover {
+  cursor: pointer;
+}
+
+.header .nav-link {
+  font-family: var(--primary-font);
+  line-height: 1.28571;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-link-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 0px;
+  transition: width var(--transition-base);
+}
+
+.header .nav-link-item:hover .nav-link::after {
+  width: 37px;
+}
+
+.header .menu-toggle {
+  border: none;
+  background: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.header .menu-toggle .icon {
+  stroke: var(--primary-text-color);
+  width: 32px;
+  height: 32px;
+}
+
+.header .social-icons-set {
+  display: none;
+}
+
+.header .social-icons-set .icon {
+  fill: var(--primary-text-color);
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: relative;
+    height: 68px;
+  }
+
+  .header .menu-toggle .icon {
+    stroke: black;
+    width: 32px;
+    height: 32px;
+  }
+
+  .header .menu-toggle .icon {
+    width: 40px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    height: 84px;
+  }
+
+  .header .container {
+    max-width: 1088px;
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .header .nav-link-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header .menu-toggle {
+    display: none;
+  }
+
+  .header .nav-link {
+    font-size: 14px;
+  }
+
+  .header .social-icons-set {
+    display: flex;
+  }
+}

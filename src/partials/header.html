@@ -1,6 +1,21 @@
-<header>
+<header class="header">
   <div class="container">
-    <h1>Header</h1>
-    <load ="partials/button.html" title="Leave an application" />
+    <nav class="header-nav">
+      <a class="logo" href="./index.html">
+        english<span class="logo-suffix">excellence</span>.
+      </a>
+      <load src="/partials/nav-link-group.html" />
+      <button
+        role="button"
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon">
+          <use href="./img/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <load src="/partials/social-icons-set.html" />
+    </nav>
   </div>
 </header>

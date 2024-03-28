@@ -1,0 +1,110 @@
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(18, 20, 23, 0.4);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, visibility var(--transition-base), 0.25s ease-in-out 0s;
+}
+
+.menu-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transition-base);
+}
+
+.menu-container {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: auto;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-backdrop.is-open .menu-container {
+  transform: translateX(0);
+}
+
+.menu-container .btn-close {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  padding: 0;
+}
+
+.menu-container .btn-close .icon {
+  stroke: #fff;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-container-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container .nav-link-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 196px;
+}
+
+.menu-container .nav-link {
+  font-family: var(--primary-font);
+  line-height: 1.28571;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu-container .social-icons-set {
+  margin-top: auto;
+}
+
+.menu-container .social-icons-set .icon-link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-container .social-icons-set .icon,
+.menu-container .social-icons-set .icon-link:hover .icon {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    max-width: 384px;
+    padding-bottom: 32px;
+  }
+
+  .menu-container .btn-close .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-container .nav-link-group {
+    margin-top: 277px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1280px) {
+  .menu-container .nav-link-group {
+    margin-top: auto;
+  }
+}
