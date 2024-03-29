@@ -105,7 +105,6 @@
     color: var(--bg-color);
     padding-top: 260px;
     max-width: 488px;
-    max-height: auto;
   }
 }
 
@@ -113,7 +112,6 @@
   .hero-text {
     padding-top: 164px;
     max-width: 564px;
-    max-height: auto;
   }
 }
 
