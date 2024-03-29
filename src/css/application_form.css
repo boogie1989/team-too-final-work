@@ -1,0 +1,310 @@
+.application h2 {
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+    .application {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.paragraph {
+    color: rgba(18, 20, 23, 0.8);
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .paragraph {
+        margin-bottom: 64px;
+        color: rgba(18, 20, 23, 0.5);
+    }
+}
+
+@media (min-width: 768px) {
+    .application-form-content {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application-form-content {
+        display: flex;
+        width: 1024px;
+    }
+}
+
+.application-img-content {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .application-img-content {
+        display: flex;
+        align-items: end;
+        border-radius: 30px;
+        width: 492px;
+        height: 578px;
+        background-image: url(../img/application-img.png);
+        background-repeat: no-repeat;
+        background-color: var(--primary-color);
+        margin-right: 32px;
+    }
+
+    .lessons-counter {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .lesson-paragraph {
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0 20px 40px 20px;
+        text-align: center;
+    }
+
+    form {
+        width: 500px;
+    }
+}
+
+.group-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.application-form-input {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 12px;
+    width: 335px;
+    height: 50px;
+    padding-left: 18px;
+    outline: none;
+}
+
+@media (max-width: 374px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .application-form-input {
+        width: 292px;
+    }
+}
+
+@media (min-width: 768px) {
+    .application-form-input {
+        width: 500px;
+        height: 56px;
+    }
+}
+
+.validation-border {
+    position: relative;
+}
+
+.placeholder {
+    font-size: 14px;
+    line-height: 1.28571;
+    pointer-events: none;
+    position: absolute;
+    top: 18px;
+    left: 8px;
+    padding: 0 8px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-text-color);
+}
+
+@media (min-width: 768px) {
+    .placeholder {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.application-form-input:not(:placeholder-shown).application-form-input:not(:focus)+.placeholder {
+    transform: scale(.75) translateY(-36px) translateX(-15%);
+    color: var(--primary-text-color);
+    transition: .2s ease;
+}
+
+.application-form-input:focus {
+    border-color: var(--primary-color);
+}
+
+.application-form-input:focus+.placeholder {
+    transform: scale(.75) translateY(-36px) translateX(-15%);
+    color: var(--primary-color);
+    transition: .2s ease;
+}
+
+.application-form-input:invalid:not(:placeholder-shown) {
+    transition: .2s ease;
+    border-color: red;
+}
+
+.application-form-input:invalid:not(:placeholder-shown)+.placeholder {
+    transition: .2s ease;
+    color: red;
+}
+
+.application-form-input:invalid:not(:placeholder-shown).application-form-input:not(:focus)+.placeholder {
+    transform: scale(.75) translateY(-36px) translateX(-15%);
+    color: red;
+    transition: .2s ease;
+}
+
+.comment {
+    resize: none;
+    min-height: 94px;
+    padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .group-inputs {
+        margin-bottom: 32px;
+
+    }
+    .comment {
+        min-height: 104px;
+    }
+}
+
+.group-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .group-radio {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.radio-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+    .radio-title {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+
+.radio-label {
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+@media (min-width: 768px) {
+    .radio-label {
+        font-size: 18px;
+        line-height: 1.33333;
+    }
+}
+
+.radio input[type='radio'] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    border-radius: 10px;
+    margin-right: 8px;
+
+    position: relative;
+    top: 0.2em;
+    vertical-align: top;
+}
+
+.radio input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.radio input[type='radio']:checked {
+    border: 2px solid #4dc274;
+}
+
+.radio input[type='radio']:checked:before {
+    background: #4dc274;
+}
+
+.form-button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 150px;
+    background-color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+@media (max-width: 374px) {
+    .form-button {
+        padding: 14px 128px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-button {
+        font-size: 18px;
+        line-height: 1.55556;
+        padding: 16px 227.5px;
+    }
+}
+
+.privacy {
+    font-size: 12px;
+    line-height: 1.33333;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.privacy a {
+    text-decoration: underline;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+@media (min-width: 768px) {
+    .privacy {
+        font-size: 14px;
+        line-height: 1.71429;
+    }
+}
