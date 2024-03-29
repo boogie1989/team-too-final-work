@@ -1,9 +1,15 @@
 .hero-section {
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   background-color: var(--primary-color-dark);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 20px;
 }
 
 .hero-wrapper {
@@ -12,13 +18,18 @@
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%
     ),
-    url('../img/hero_image_1x.jpeg');
+    url('../img/mobile_hero_image_1x.jpeg');
   background-position: right 15% bottom 0%;
   border-radius: 16px;
 }
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: url('../img/hero_image_2x.jpeg');
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/mobile_hero_image_2x.jpeg');
   }
 }
 @media only screen and (min-width: 768px) {
@@ -28,45 +39,53 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../img/hero_image_1x.jpeg');
+      url('../img/tablet_hero_image_1x.jpeg');
     background-position: right 30% bottom 0%;
     border-radius: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: url('../img/hero_image_2x.jpeg');
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../img/tablet_hero_image_2x.jpeg');
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-wrapper {
-    background-image: url('../img/hero_image_1x.jpeg');
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../img/desktop_hero_image_1x.jpeg');
   }
 }
 @media only screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: url('../img/hero_image_2x.jpeg');
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../img/desktop_hero_image_2x.jpeg');
   }
-}
-
-.hero-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding-left: 32px;
+    padding-right: 0;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-section {
     padding-left: 64px;
+    padding-right: 0;
   }
 }
 
@@ -80,19 +99,21 @@
 
 @media only screen and (min-width: 768px) {
   .hero-text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.16667;
+    color: var(--bg-color);
     padding-top: 260px;
-    padding-right: 184px;
+    width: 488px;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-text {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 1.16667;
-    color: var(--bg-color);
     padding-top: 164px;
-    padding-right: 524px;
+    width: 564px;
+    height: auto;
   }
 }
 
