@@ -8,6 +8,7 @@
 
   --primary-text-color: #121417;
   --primary-text-color-500: rgba(18, 20, 23, 0.5);
+  --accent-textcolor: #bee8cc;
 
   --primary-color: #4dc274;
   --primary-color-dark: #38ae5f;
@@ -25,6 +26,10 @@ body {
   font-family: var(--primary-font);
   background-color: var(--bg-color);
   color: var(--primary-text-color);
+}
+
+.accent {
+  color: var(--accent-textcolor);
 }
 
 .container {
