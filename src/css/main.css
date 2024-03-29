@@ -8,6 +8,7 @@
 
   --primary-text-color: #121417;
   --primary-text-color-500: rgba(18, 20, 23, 0.5);
+  --accent-textcolor: #bee8cc;
 
   --primary-color: #4dc274;
   --primary-color-dark: #38ae5f;
@@ -17,10 +18,18 @@
   --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--bg-color);
   color: var(--primary-text-color);
+}
+
+.accent {
+  color: var(--accent-textcolor);
 }
 
 .section {
@@ -32,6 +41,21 @@ body {
   padding: 0px 20px;
 }
 
+.container.hero-container {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.hero-container {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.hero-container {
+    margin-top: 16px;
+  }
+}
 
 .section-title {
   font-size: 40px;
