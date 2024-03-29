@@ -1,6 +1,15 @@
-<li>
-    {=$avatar}
-    {=$name}
-    {=$position}
-    {=$text}
+<li class="our-students-list__item mobile-hidden">
+  <div class="our-students-list__item--container">
+    <div class="student-avatar">
+      <img srcset="{=$avatar}" width="50" height="50" alt="student" />
+    </div>
+
+    <div class="student-info">
+      <h3 class="student-info__name">{=$name}</h3>
+      <p class="student-info__occupation">{=$position}</p>
+    </div>
+  </div>
+  <div class="our-students-list__item--text-wrapper">
+    <p class="our-students-list__item--text">{=$text}</p>
+  </div>
 </li>
