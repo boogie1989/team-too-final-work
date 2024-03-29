@@ -3,69 +3,49 @@
   margin: 0 auto;
   background-color: var(--primary-color-dark);
   background-repeat: no-repeat;
-
   background-size: cover;
 }
 
 .hero-wrapper {
   background-image: linear-gradient(
-      114deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
+      357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
     ),
     url('../img/hero_image_1x.jpeg');
   background-position: right 15% bottom 0%;
-  border-radius: 30px;
+  border-radius: 16px;
 }
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url('../img/img/hero_image_2x.jpeg');
+    background-image: url('../img/hero_image_2x.jpeg');
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-wrapper {
     background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
       ),
       url('../img/hero_image_1x.jpeg');
     background-position: right 30% bottom 0%;
+    border-radius: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url('../img/hero_image_2x.jpeg');
+    background-image: url('../img/hero_image_2x.jpeg');
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-wrapper {
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url('../img/hero_image_1x.jpeg');
+    background-image: url('../img/hero_image_1x.jpeg');
   }
 }
 @media only screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero-wrapper {
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url('../img/hero_image_2x.jpeg');
+    background-image: url('../img/hero_image_2x.jpeg');
   }
 }
 
@@ -100,6 +80,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-text {
+    padding-top: 260px;
     padding-right: 184px;
   }
 }
@@ -110,6 +91,7 @@
     font-size: 60px;
     line-height: 1.16667;
     color: var(--bg-color);
+    padding-top: 164px;
     padding-right: 524px;
   }
 }
@@ -215,4 +197,20 @@
 
 .hero-scroll-button-link {
   padding: 13px;
+}
+
+.container.hero-container {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.hero-container {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.hero-container {
+    margin-top: 16px;
+  }
 }

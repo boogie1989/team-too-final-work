@@ -41,22 +41,6 @@ body {
   padding: 0px 20px;
 }
 
-.container.hero-container {
-  margin-top: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .container.hero-container {
-    margin-top: 32px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container.hero-container {
-    margin-top: 16px;
-  }
-}
-
 .section-title {
   font-size: 32px;
   text-align: center;
