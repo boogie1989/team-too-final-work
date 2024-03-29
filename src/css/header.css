@@ -8,7 +8,7 @@ section {
   left: 0;
   height: 67px;
   background-color: var(--bg-color);
-  z-index: 2;
+  z-index: 100;
 }
 
 .header .container {
