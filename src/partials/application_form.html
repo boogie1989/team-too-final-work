@@ -1,4 +1,4 @@
-<section class="section" id="application-form">
+<section id="applicationForm" class="section">
   <div class="container application">
     <h2 class="section-title">
       Leave an
@@ -21,47 +21,55 @@
       </div>
       <form>
         <fieldset class="group-inputs">
+          <label class="visually-hidden" for="username">Name</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="username"
               type="text"
               name="username"
-              placeholder=""
+              placeholder=" "
               pattern="[A-Za-z]{2,}[\s]?[A-Za-z]*"
               title="The name must be no shorter than 2 letters"
               required
             />
             <span class="placeholder">Name</span>
           </div>
+          <label class="visually-hidden" for="user-email">Email</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="user-email"
               type="email"
               name="email"
-              placeholder=""
+              placeholder=" "
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
               title="Enter valid email address"
               required
             />
             <span class="placeholder">Email</span>
           </div>
+          <label class="visually-hidden" for="user-phone">Phone</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="user-phone"
               type="tel"
               name="phone-number"
-              placeholder=""
+              placeholder=" "
               pattern="[0-9]{10}"
               title="The phone number must consist of 10 digits"
               required
             />
             <span class="placeholder">Phone</span>
           </div>
+          <label class="visually-hidden" for="comment-field">Comment</label>
           <div class="validation-border">
             <textarea
               class="application-form-input comment"
+              id="comment-field"
               name="comment"
-              placeholder=""
+              placeholder=" "
             ></textarea>
             <span class="placeholder">Comment</span>
           </div>

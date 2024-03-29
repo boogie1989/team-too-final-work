@@ -32,9 +32,6 @@ body {
   color: var(--accent-textcolor);
 }
 
-.section {
-}
-
 .container {
   max-width: 375px;
   margin: 80px auto;
