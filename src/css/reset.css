@@ -36,3 +36,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
