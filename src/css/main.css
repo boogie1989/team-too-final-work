@@ -17,13 +17,14 @@
   --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--bg-color);
   color: var(--primary-text-color);
-}
-
-.section {
 }
 
 .container {
