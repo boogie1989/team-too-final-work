@@ -25,4 +25,8 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // Close mobile menu on link click
+  const menuLinks = mobileMenu.querySelectorAll('.nav-link');
+  menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
 })();

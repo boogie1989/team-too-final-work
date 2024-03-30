@@ -1,5 +1,5 @@
 section {
-  scroll-behavior: smooth;
+  scroll-margin: 100px;
 }
 /* header */
 .header {
