@@ -1,3 +1,14 @@
+function isElementOutOfViewport(el) {
+  const rect = el.getBoundingClientRect();
+
+  return (
+    rect.top > window.innerHeight ||
+    rect.left > window.innerWidth ||
+    rect.bottom < 0 ||
+    rect.right < 0
+  );
+}
+
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
@@ -29,4 +40,33 @@
   // Close mobile menu on link click
   const menuLinks = mobileMenu.querySelectorAll('.nav-link');
   menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+  // scrollTop
+  const scrollTopBtn = document.querySelector('.scroll-top-button');
+  scrollTopBtn.addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+
+  document.addEventListener('scroll', e => {
+    const firstSection = document.querySelector('section');
+    const scrollTopBtnIsVisible = scrollTopBtn.checkVisibility({
+      opacityProperty: true,
+    });
+
+    if (
+      !!firstSection &&
+      isElementOutOfViewport(firstSection) &&
+      !scrollTopBtnIsVisible
+    ) {
+      scrollTopBtn.classList.add('visible');
+    } else if (!isElementOutOfViewport(firstSection) && scrollTopBtnIsVisible) {
+      scrollTopBtn.classList.remove('visible');
+    } else {
+      return;
+    }
+  });
 })();
