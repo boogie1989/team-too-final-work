@@ -80,6 +80,7 @@ section {
   background: none;
   line-height: 1;
   cursor: pointer;
+  padding: 0;
 }
 
 .header .menu-toggle .icon {
