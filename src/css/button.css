@@ -26,3 +26,36 @@
     line-height: 1.55;
   }
 }
+
+.scroll-top-button {
+  display: inline-flex;
+  padding: 13px;
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity, visibility var(--transition-base), 0.25s ease-in-out 0s;
+}
+
+.scroll-top-button.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9;
+  transition: opacity, visibility, background-color var(--transition-base),
+    0.25s ease-in-out 0s;
+}
+
+.scroll-top-button .icon {
+  fill: #fff;
+  width: 12px;
+  height: 12px;
+}
+
+.scroll-top-button.visible:hover {
+  background-color: var(--primary-color-dark);
+}

@@ -1,5 +1,5 @@
 section {
-  scroll-behavior: smooth;
+  scroll-margin: 100px;
 }
 /* header */
 .header {
@@ -80,6 +80,7 @@ section {
   background: none;
   line-height: 1;
   cursor: pointer;
+  padding: 0;
 }
 
 .header .menu-toggle .icon {
