@@ -34,6 +34,12 @@
   border: 1px solid var(--bg-color-400);
 }
 
+.lesson-card-selected .button:hover,
+.lesson-card-selected .button:focus {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
 
 
 .lesson-card-title {
