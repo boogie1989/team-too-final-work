@@ -1,4 +1,4 @@
-<section class="section" id="application-form">
+<section id="applicationForm" class="section">
   <div class="container application">
     <h2 class="section-title">
       Leave an
@@ -21,9 +21,11 @@
       </div>
       <form>
         <fieldset class="group-inputs">
+          <label class="visually-hidden" for="username">Name</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="username"
               type="text"
               name="username"
               placeholder=" "
@@ -33,9 +35,11 @@
             />
             <span class="placeholder">Name</span>
           </div>
+          <label class="visually-hidden" for="user-email">Email</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="user-email"
               type="email"
               name="email"
               placeholder=" "
@@ -45,9 +49,11 @@
             />
             <span class="placeholder">Email</span>
           </div>
+          <label class="visually-hidden" for="user-phone">Phone</label>
           <div class="validation-border">
             <input
               class="application-form-input"
+              id="user-phone"
               type="tel"
               name="phone-number"
               placeholder=" "
@@ -57,9 +63,11 @@
             />
             <span class="placeholder">Phone</span>
           </div>
+          <label class="visually-hidden" for="comment-field">Comment</label>
           <div class="validation-border">
             <textarea
               class="application-form-input comment"
+              id="comment-field"
               name="comment"
               placeholder=" "
             ></textarea>

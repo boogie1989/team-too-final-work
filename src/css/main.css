@@ -8,6 +8,7 @@
 
   --primary-text-color: #121417;
   --primary-text-color-500: rgba(18, 20, 23, 0.5);
+  --accent-textcolor: #bee8cc;
 
   --primary-color: #4dc274;
   --primary-color-dark: #38ae5f;
@@ -17,14 +18,21 @@
   --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--bg-color);
   color: var(--primary-text-color);
 }
 
-.section {
+.accent {
+  color: var(--accent-textcolor);
 }
+
+.section {}
 
 .container {
   max-width: 375px;
@@ -82,7 +90,6 @@ body {
   .section-desc {
     font-size: 18px;
     line-height: 1.65;
-    padding: 0px, 157px;
     width: 95%;
     padding-bottom: 64px;
   }
