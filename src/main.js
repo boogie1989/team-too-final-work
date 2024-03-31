@@ -53,9 +53,7 @@ function isElementOutOfViewport(el) {
 
   document.addEventListener('scroll', e => {
     const firstSection = document.querySelector('section');
-    const scrollTopBtnIsVisible = scrollTopBtn.checkVisibility({
-      opacityProperty: true,
-    });
+    const scrollTopBtnIsVisible = scrollTopBtn.classList.contains('visible');
 
     if (
       !!firstSection &&
