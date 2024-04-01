@@ -165,6 +165,13 @@
   color: var(--bg-color);
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-button-text {
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+}
+
 .hero-scroll-button {
   display: flex;
   justify-content: center;
@@ -225,6 +232,7 @@
 @media only screen and (min-width: 768px) {
   .container.hero-container {
     margin-top: 32px;
+    margin-bottom: 96px;
   }
 }
 
